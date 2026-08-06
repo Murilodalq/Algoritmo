@@ -1,6 +1,6 @@
 programa {
   funcao inicio() {
-    real hamburguer = 20.00, refrigerante = 7.00, batata = 12.00, valor_final
+    real hamburguer = 18.00, refrigerante = 7.00, batata = 12.00, valor_final
     inteiro num_hamb, num_refri, num_batata
     escreva("Menu\n----------\nHamburguer: R$" + hamburguer + "\nRefrigerante: R$" + refrigerante + "\nBatata: R$" + batata + "\n---------------\nDigite a quantidade de hamburgueres:\n")
     leia(num_hamb)
