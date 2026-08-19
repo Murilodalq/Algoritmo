@@ -12,11 +12,11 @@ main(){
 	float fatEst, fatPro, fatEmpre, fatTotal, fatMedio;
 	
 	setlocale(LC_ALL, "Portuguese");
-	printf("Digite o número de estudantes:\n");
+	printf("Digite o nÃºmero de estudantes:\n");
 		scanf("%d", &qtdEst);
-	printf("Digite o número de Profissionais:\n");
+	printf("Digite o nÃºmero de Profissionais:\n");
 		scanf("%d", &qtdPro);
-	printf("Digite o número de Empresários:\n");
+	printf("Digite o nÃºmero de EmpresÃ¡rios:\n");
 		scanf("%d", &qtdEmpre);
 		
 	totalPart = qtdEst + qtdPro + qtdEmpre;
@@ -30,7 +30,14 @@ main(){
 	printf("Total de participantes: %d\n", totalPart);
 	printf("Faturamento por estudantes: R$%.2f\n", fatEst);
 	printf("Faturamento por Profissionais: R$%.2f\n", fatPro);
-	printf("Faturamento por empresários; R$%.2f\n", fatEmpre);
-	printf("Faturamento Total: R$%.2f\n", fatTotal);
-	printf("faturamento médio por participante: R$%.2f\n", fatMedio);
+	printf("Faturamento por empresÃ¡rios; R$%.2f\n", fatEmpre);
+	printf("Faturamento mÃ©dio por participante: R$%.2f\n", fatMedio);
+	
+	if (fatTotal >= 20000) {
+		printf("Receita maior que R$20.000, aplicando desconto de 5%%%. . .\n");
+		fatTotal = fatTotal - (fatTotal * 0.05);
+		printf("Faturamento total: R$%.2f\n", fatTotal);
+	} else {
+		printf("Faturamento Total: R$%.2f\n", fatTotal);
+	}
 }
